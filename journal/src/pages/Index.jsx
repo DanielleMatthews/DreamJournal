@@ -1,31 +1,46 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { dreamList } from "../services/getDreams"
+import { goalList } from "../services/getGoals"
 
 export default function Index(){
     const nav = useNavigate()
     const[data, setData] = useState([])
+    const [goals, setGoals] = useState([])
 
     useEffect(()=>{
         dreamList()
         .then(res=> setData(res.data))
     },[])
-    console.log(data)
+    // console.log(data)
+
+    useEffect(()=>{
+        goalList()
+        .then(res => setGoals(res.data))
+    }, [])
+    console.log(goals)
 
     return(
         <div>
             <h1> homey home page </h1>
-            <button onClick={()=> {nav("/new")}}> New Record </button>
-            <ul></ul>
-            <h3> Dreams </h3>
+            <h3> Dream Journal </h3>
+            <button onClick={()=> {nav("/dream/new")}}> New Dream </button>
             <ul>
                 {data.map((item, i)=>(
                     <li key={i}>
-                        <a href= {`http://localhost:3000/${item._id}`}> {item.title} </a>
-    
+                        <a href= {`http://localhost:3000/dream/${item._id}`}> {item.title} </a>
                     </li>
                 ))}
-            </ul>   
+            </ul> 
+            <h3> Goals and Aspirations  </h3> 
+            <button onClick={()=> {nav("/goal/new")}}> New Goal </button>
+            <ul> 
+                {goals.map((item, i)=>(
+                    <li key={i}> 
+                    < a href= {`http://localhost:3000/goal/${item._id}`}> {item.title} </a>
+                    </li>
+                ))}
+            </ul> 
         </div>
     )
 }

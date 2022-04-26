@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
-import { deleteDream, oneDream } from "../services/getDreams"
+import { deleteDream, oneDream } from "../../services/getDreams"
 
-export default function Show(){
+export default function ShowDream(){
     const nav = useNavigate()
     const { id } = useParams()
     const [dream, setDream] = useState({})
@@ -22,7 +22,7 @@ export default function Show(){
         <div> 
             <h3> {dream.title} </h3>
             <p> {dream.description} </p>
-            <button onClick={()=> {nav(`/${id}/update`)}}> Edit </button>
+            <button onClick={()=> {nav(`/dream/${id}/update`)}}> Edit </button>
             <button onClick={deleteTheDream}> Delete Dream</button>
         </div>
     )

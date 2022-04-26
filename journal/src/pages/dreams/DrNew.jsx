@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
-import { createDream } from "../services/getDreams"
+import { createDream } from "../../services/getDreams"
 
-export default function New(){
+export default function NewDream(){
     const nav = useNavigate()
 
     const createTheDream = e => {

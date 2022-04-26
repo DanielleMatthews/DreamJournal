@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { oneDream, updateDream } from "../services/getDreams";
+import { oneDream, updateDream } from "../../services/getDreams";
 
-export default function Update(){
+export default function UpdateDream(){
     const { id } = useParams()
     const nav = useNavigate()
     const [dream, setDream] = useState({})
@@ -21,7 +21,7 @@ export default function Update(){
             dayBefore: e.target.dayBefore.value,
             date: e.target.date.value}
         updateDream(id, updated)
-        nav(`/${id}`)
+        nav(`/dream/${id}`)
     }
     return(
         <div> 
