@@ -1,38 +1,58 @@
-.App {
+*{
+  background-color: rgb(171, 168, 168);
+}
+ul{
+  list-style: none;
+}
+button{
+  background-color: rgb(140, 169, 196);
+  font-weight: bold;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
   text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(33, 32, 32);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(126, 125, 125);
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover {background-color: #6c94d5}
+  
+button:active {
+  background-color: #3e6e8e;
+  box-shadow: 0 5px rgb(60, 60, 60);
+  transform: translateY(4px);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form{
+  text-align: right;
+  position: absolute;
+  width: 57%;
+  font-weight: bolder;
+  padding-top: 5%;
+  font-size: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.form >form >input{
+  background-color: rgb(183, 178, 178);
+}
+form >textarea{
+  background-color: rgb(183, 178, 178);
+}
+a{
+  font-size: larger;
+  font-weight: bold;
+}
+a:link{
+  color: rgb(15, 15, 15);
+}
+a:visited{ 
+  color:rgb(25, 21, 44);
+}
+a:hover{ 
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:active{
+  color: rgb(40, 34, 74);
 }

@@ -19,19 +19,22 @@ export default function UpdateDream(){
             description: e.target.description.value,
             opinions: e.target.opinions.value,
             dayBefore: e.target.dayBefore.value,
+            image: e.target.image.value,
             date: e.target.date.value}
         updateDream(id, updated)
         nav(`/dream/${id}`)
     }
     return(
-        <div> 
+        <div className="form"> 
+            <h3> Update Dream </h3>
             <form onSubmit={updateTheDream}>
             Title: <input type='text' name='title' defaultValue={dream.title} /> <br/>
-            Description: <input type='text' name='description' defaultValue={dream.description} /> <br/>
-            Opinions on Dream: <input type='text' name='opinions' defaultValue={dream.opinions} /> <br/>
-            Describe the Day Before Your Dream: <input type='text' name='dayBefore' defaultValue={dream.dayBefore} /> <br/>
-            Date: <input type='date' name='date' defaultValue={dream.date} /> <br/>
-            <input type='submit' value='Update Dream'/>
+            Description: <textarea name='description' defaultValue={dream.description} cols='20' rows='3' /> <br/>
+            Opinions on Dream: <textarea name='opinions' defaultValue={dream.opinions} cols='20' rows='2'/> <br/>
+            Describe the Day Before Your Dream: <textarea name='dayBefore' defaultValue={dream.dayBefore} cols='20' rows='3'/> <br/>
+            Image: <input type='text' name='image' defaultValue={dream.image} /> <br/>
+            Date: <input type='date' name='date' defaultValue={dream.date} /> <br/> <br/>
+            <input type='submit' value='Update Dream'className="formBtn"/>
             </form>
         </div>
     )

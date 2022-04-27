@@ -22,7 +22,7 @@ export default function ShowDream(){
         <div> 
             <h3> {dream.title} </h3>
             <p> {dream.description} </p>
-            <button onClick={()=> {nav(`/dream/${id}/update`)}}> Edit </button>
+            <button onClick={()=> {nav(`/dream/${id}/update`)}}> Edit </button> &nbsp;&nbsp;
             <button onClick={deleteTheDream}> Delete Dream</button>
         </div>
     )

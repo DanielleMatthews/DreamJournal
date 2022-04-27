@@ -21,7 +21,9 @@ export default function ShowGoals(){
         <div>
             <h3> {goal.title} </h3>
             <p> {goal.description} </p>
-            <button onClick={()=> {nav(`/goal/${id}/update`)}}> Edit </button>
+            <p> Complete Goal By: {goal.completeBy}  </p>
+            <p> {goal.completed ? 'Congratulations! You have completed this goal!' : 'Keep working towards this goal!'}</p>
+            <button onClick={()=> {nav(`/goal/${id}/update`)}}> Edit </button> &nbsp; &nbsp;
             <button onClick={deleteTheGoal}> Delete Goal </button>
         </div>
     )

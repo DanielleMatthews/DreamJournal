@@ -13,8 +13,7 @@ export default function App() {
   return (
     <Router>
       <nav>
-        <Link to="/"> Home </Link>
-        <Link to='/goals'> Goals </Link> 
+        <Link to="/"> Home </Link> 
       </nav>
       <Routes>
         <Route path='/' element={<Index/>} />

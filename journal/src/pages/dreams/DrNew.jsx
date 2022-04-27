@@ -11,17 +11,20 @@ export default function NewDream(){
             description: e.target.description.value,
             opinions: e.target.opinions.value,
             dayBefore: e.target.dayBefore.value,
+            image: e.target.image.value,
             date: e.target.date.value}
         createDream(add)
         nav('/')
     }
     return(
-        <div>
+        <div className="form">
+            <h3> Create a New Dream </h3>
             <form onSubmit={createTheDream}>
             Title: <input type='text' name='title' /> <br/>
-            Description: <input type='text' name='description' /> <br/>
-            Opinions on Dream: <input type='text' name='opinions' /> <br/>
-            Describe the Day Before Your Dream: <input type='text' name='dayBefore' /> <br/>
+            Description: <textarea name='description' cols='20' rows='3' /> <br/>
+            Opinions on Dream: <textarea name='opinions' cols='20' rows='2'/> <br/>
+            Describe the Day Before Your Dream: <textarea name='dayBefore' cols='20' rows='3'/> <br/>
+            Image: <input type='text' name='image' /> <br/>
             Date: <input type='date' name='date' /> <br/>
             <input type='submit' value='Create a New Dream'/>
             </form>

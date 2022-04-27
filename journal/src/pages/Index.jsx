@@ -24,7 +24,8 @@ export default function Index(){
         <div>
             <h1> homey home page </h1>
             <h3> Dream Journal </h3>
-            <button onClick={()=> {nav("/dream/new")}}> New Dream </button>
+            <button onClick={()=> {nav("/dream/new")}}> New Dream </button> <br/> <br/>
+            Try out this <a href="https://www.wombo.art/" target='_blank'> link </a> to generate an image based on key words from your dream!
             <ul>
                 {data.map((item, i)=>(
                     <li key={i}>

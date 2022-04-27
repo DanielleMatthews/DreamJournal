@@ -23,10 +23,11 @@ export default function UpdateGoal(){
         nav(`/goal/${id}`)
     }
     return(
-        <div>
+        <div className="form">
+            <h3> Update Goal </h3>
             <form onSubmit={updateTheGoal}>
             Title:  <input type='text' name='title' defaultValue={goal.title}/> <br/>
-                Description: <input type='text' name='description' defaultValue={goal.description} /> <br/>
+                Description: <textarea name='description' defaultValue={goal.description} cols='40' rows='3'/> <br/>
                 Complete By: <input type='date' name='completeBy' defaultValue={goal.completeBy}/> <br/>
                 Completed: <input type='checkbox' name='completed' defaultChecked={goal.completed}/> <br/>
                 <input type='submit' value='Update Goal' /> 
