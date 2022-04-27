@@ -21,16 +21,18 @@ export default function Index(){
     console.log(goals)
 
     return(
-        <div>
+        <div id='mainHome'>
             <h1> homey home page </h1>
             <h3> Dream Journal </h3>
             <button onClick={()=> {nav("/dream/new")}}> New Dream </button> <br/> <br/>
             Try out this <a href="https://www.wombo.art/" target='_blank'> link </a> to generate an image based on key words from your dream!
             <ul>
                 {data.map((item, i)=>(
+                <div id='dreamL'>
                     <li key={i}>
-                        <a href= {`http://localhost:3000/dream/${item._id}`}> {item.title} </a>
-                    </li>
+                        <a href= {`http://localhost:3000/dream/${item._id}`} className="listLink"> {item.title} </a>
+                    </li> 
+                </div>
                 ))}
             </ul> 
             <h3> Goals and Aspirations  </h3> 
@@ -38,7 +40,7 @@ export default function Index(){
             <ul> 
                 {goals.map((item, i)=>(
                     <li key={i}> 
-                    < a href= {`http://localhost:3000/goal/${item._id}`}> {item.title} </a>
+                    < a href= {`http://localhost:3000/goal/${item._id}`} className="listLink"> {item.title} </a>
                     </li>
                 ))}
             </ul> 

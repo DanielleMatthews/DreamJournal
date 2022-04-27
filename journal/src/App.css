@@ -1,8 +1,11 @@
 *{
-  background-color: rgb(171, 168, 168);
+  background-image: url('https://ak.picdn.net/shutterstock/videos/1065193918/thumb/1.jpg');
+  color: white;
+  text-shadow: rgb(67, 66, 66) 1px 2px;
 }
 ul{
   list-style: none;
+  align-content: center;
 }
 button{
   background-color: rgb(140, 169, 196);
@@ -44,6 +47,9 @@ a{
   font-size: larger;
   font-weight: bold;
 }
+.listLink{
+  background-image: linear-gradient(to bottom right, #aa64bf, #3070a8);
+}
 a:link{
   color: rgb(15, 15, 15);
 }
@@ -51,8 +57,31 @@ a:visited{
   color:rgb(25, 21, 44);
 }
 a:hover{ 
-  color: white;
+  color: rgb(71, 3, 35);
 }
 a:active{
   color: rgb(40, 34, 74);
+}
+#dreamL{
+  margin: auto;
+  border: 15px groove #aa64bf;
+  border-top-color:  #3070a8; 
+  border-bottom-color: #aa64bf;
+  border-left-color:#3070a8;
+  background-image: linear-gradient(to bottom right, #3070a8, #aa64bf);
+  border-radius: 30px; 
+  padding-top: 25px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3pc;
+  width: 75%;
+}
+#dreamL >li {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 2.7em;
+  letter-spacing: 1px;
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
+
 }
