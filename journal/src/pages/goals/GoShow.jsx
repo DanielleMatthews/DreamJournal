@@ -18,13 +18,15 @@ export default function ShowGoals(){
     }
 
     return(
-        <div>
+        <div  className="show">
             <h3> {goal.title} </h3>
-            <p> {goal.description} </p>
-            <p> Complete Goal By: {goal.completeBy}  </p>
-            <p> {goal.completed ? 'Congratulations! You have completed this goal!' : 'Keep working towards this goal!'}</p>
             <button onClick={()=> {nav(`/goal/${id}/update`)}}> Edit </button> &nbsp; &nbsp;
-            <button onClick={deleteTheGoal}> Delete Goal </button>
+            <button onClick={deleteTheGoal}> Delete Goal </button> <br/> <br/> <br/> 
+            <div className="description">
+                <p> {goal.description} </p>
+                <p> {goal.completed ? 'Congratulations! You have completed this goal!' : 'Keep working towards this goal!'} </p>
+                <p> Complete Goal By: {goal.completeBy}  </p>
+            </div>
         </div>
     )
 }

@@ -1,33 +1,42 @@
-*{
+body{
   background-image: url('https://ak.picdn.net/shutterstock/videos/1065193918/thumb/1.jpg');
-  color: white;
-  text-shadow: rgb(67, 66, 66) 1px 2px;
+  text-shadow: #434242 4px 3px;
+  color: #c3f8f8;
 }
 ul{
   list-style: none;
   align-content: center;
 }
 button{
-  background-color: rgb(140, 169, 196);
+  margin-left: 10px ;
+  background-color: #9062f4;
   font-weight: bold;
-  font-size: 14px;
-  height: 30px;
-  width: 100px;
+  font-size: 17px;
+  height: 45px;
+  width: 125px;
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: rgb(33, 32, 32);
+  color: #212020;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px rgb(126, 125, 125);
-  
+  box-shadow: 0 6px #464545;
 }
 button:hover {background-color: #6c94d5}
   
 button:active {
-  background-color: #3e6e8e;
-  box-shadow: 0 5px rgb(60, 60, 60);
+  background-color: #0d96f0;
+  box-shadow: #3c3c3c 1px 2px;
   transform: translateY(4px);
+}
+nav{
+  font-size: larger;
+  text-shadow: #434242 2px 2px;
+  padding-left: 10px;
+}
+#tryLink{
+  font-size: 20px;
+  text-shadow: #434242 2.6px 2px;
 }
 .form{
   text-align: right;
@@ -35,13 +44,14 @@ button:active {
   width: 57%;
   font-weight: bolder;
   padding-top: 5%;
-  font-size: 20px;
+  font-size: 25px;
 }
 .form >form >input{
-  background-color: rgb(183, 178, 178);
+  background-color: #b2caf1;
+  width: 250px;
 }
 form >textarea{
-  background-color: rgb(183, 178, 178);
+  background-color: #b2caf1;
 }
 a{
   font-size: larger;
@@ -51,18 +61,18 @@ a{
   background-image: linear-gradient(to bottom right, #aa64bf, #3070a8);
 }
 a:link{
-  color: rgb(15, 15, 15);
+  color: #c64fd6;
 }
 a:visited{ 
-  color:rgb(25, 21, 44);
+  color:#c64fd6;
 }
 a:hover{ 
-  color: rgb(71, 3, 35);
+  color: #f1147b;
 }
 a:active{
-  color: rgb(40, 34, 74);
+  color: #5c4db1;
 }
-#dreamL{
+.list{
   margin: auto;
   border: 15px groove #aa64bf;
   border-top-color:  #3070a8; 
@@ -77,11 +87,34 @@ a:active{
   margin-top: 3pc;
   width: 75%;
 }
-#dreamL >li {
+.list >li {
   font-family: "Trebuchet MS", sans-serif;
-  font-size: 2.7em;
+  font-size: 2.5em;
   letter-spacing: 1px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
   text-transform: uppercase;
-
+}
+#mainHome >h3 {
+  font-size: 6em;
+  padding-left: 55px;
+}
+.show >h3{
+  font-size: 3em;
+  color: #dc7add;
+  padding-left: 150px;
+  border: 12px groove #aa64bf;
+  border-top-color:  #3070a8; 
+  border-bottom-color: #aa64bf;
+  border-left-color:#3070a8;
+  background-image: linear-gradient(to bottom right, #3070a8, #aa64bf);
+  border-radius: 30px; 
+  width: 60%;
+  text-shadow: #434242 3px 2px;
+}
+.description{
+  font-size: 25px;
+  padding: 25px;
+  border: solid 7px #5e2097;
+  background-color: #0b0425;
+  border-radius: 12px;
 }
