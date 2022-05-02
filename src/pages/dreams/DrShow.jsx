@@ -26,7 +26,8 @@ export default function ShowDream(){
             <button onClick={deleteTheDream}> Delete</button> <br/> <br/> <br/>
             <div className="description">
             <p> {dream.description} </p>
-            <p> Date of Dream: {date}</p>
+            <p> Day Before: {dream.dayBefore} </p> 
+            <p> Date of Dreams: {date}</p>
             </div>
         </div>
     )
