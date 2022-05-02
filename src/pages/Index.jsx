@@ -29,7 +29,7 @@ export default function Index(){
                 {data.map((item, i)=>(
                 <div className='list'>
                     <li key={i}>
-                        <a href= {`http://localhost:3000/dream/${item._id}`} className="listLink"> {item.title} </a>
+                        <a href= {`https://danielledreamjournal.herokuapp.com/dream/${item._id}`} className="listLink"> {item.title} </a>
                     </li> 
                 </div>
                 ))}
@@ -40,7 +40,7 @@ export default function Index(){
                 {goals.map((item, i)=>(
                     <div className="list">
                     <li key={i}> 
-                    < a href= {`http://localhost:3000/goal/${item._id}`} className="listLink"> {item.title} </a>
+                    < a href= {`https://danielledreamjournal.herokuapp.com/goal/${item._id}`} className="listLink"> {item.title} </a>
                     </li>
                     </div>
                 ))}
