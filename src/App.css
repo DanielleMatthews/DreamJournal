@@ -39,6 +39,7 @@ nav{
 #tryLink{
   font-size: 25px;
   text-shadow: #434242 2.6px 2px;
+  padding-left: 10px;
 }
 .form{
   text-align: right;
@@ -99,6 +100,9 @@ a:active{
 #mainHome >h3 {
   font-size: 6em;
   padding-left: 55px;
+}
+.show{
+  padding-left: 15%;
 }
 .show >h3{
   font-size: 3em;

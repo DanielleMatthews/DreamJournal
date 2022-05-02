@@ -27,7 +27,8 @@ export default function ShowDream(){
             <div className="description">
             <p> {dream.description} </p>
             <p> Day Before: {dream.dayBefore} </p> 
-            <p> Date of Dreams: {date}</p>
+            <p> Opinions: {dream.opinions} </p>
+            <p> Date of Dream: {date}</p>
             </div>
         </div>
     )
