@@ -17,6 +17,7 @@ export default function ShowDream(){
         deleteDream(id)
         nav('/')
     }
+    const date = dream.date && dream.date.slice(0,10)
 
     return(
         <div className="show"> 
@@ -25,6 +26,7 @@ export default function ShowDream(){
             <button onClick={deleteTheDream}> Delete</button> <br/> <br/> <br/>
             <div className="description">
             <p> {dream.description} </p>
+            <p> Date of Dream: {date}</p>
             </div>
         </div>
     )
