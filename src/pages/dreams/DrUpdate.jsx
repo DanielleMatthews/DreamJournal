@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import { oneDream, updateDream } from "../../services/getDreams";
+import { useEffect, useState } from "react"
+import { useNavigate, useParams } from "react-router-dom"
+import { oneDream, updateDream } from "../../services/getDreams"
 
 export default function UpdateDream(){
     const { id } = useParams()

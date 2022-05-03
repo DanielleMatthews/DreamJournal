@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
-import { deleteGoal, oneGoal } from "../../services/getGoals";
+import { useEffect, useState } from "react"
+import { useNavigate, useParams } from "react-router"
+import { deleteGoal, oneGoal } from "../../services/getGoals"
 
 export default function ShowGoals(){
     const nav = useNavigate()
